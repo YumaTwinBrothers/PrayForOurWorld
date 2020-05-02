@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rest of tasks
 
-Things you may want to cover:
+* Modify assets
 
-* Ruby version
+* Add and modify view
 
-* System dependencies
+* Set config(environments, initializers, application.rb, cable.yml, database.yml, environment.rb, )
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Set .gitignore
