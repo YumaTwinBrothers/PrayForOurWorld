@@ -1,39 +1,22 @@
-<%= render 'shared/errors', obj: @recipe %>
+<%= render 'shared/errors', obj: @blog %>
 
 <div class="row">
   <div class="col-md-12">
-    <%= form_for(@recipe, :html => {class: "form-horizontal", multipart: true, role: "form"}) do |f| %>
+    <%= form_for(@blog, :html => {class: "form-horizontal", multipart: true, role: "form"}) do |f| %>
       <div class="form-group">
         <div class="control-label col-md-2">
-          <%= f.label :name %>
+          <%= f.label :title %>
         </div>
         <div class="col-md-8">
-          <%= f.text_field :name, class: "form-control", placeholder: "Name of recipe", autofocus: true %>
+          <%= f.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
         </div>
       </div>
       <div class="form-group">
         <div class="control-label col-md-2">
-          <%= f.label :description %>
+          <%= f.label :body %>
         </div>
         <div class="col-md-8">
-          <%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Enter steps to create recipe" %>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8">
-            <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name do |cb| %>
-              <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="control-label col-md-2">
-          <%= f.label :image, "Add Image" %>
-        </div>
-        <div class="col-md-8">
-          <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png' %>
+          <%= f.text_area :body, rows: 10, class: "form-control", placeholder: "Enter steps to create article" %>
         </div>
       </div>
       <div class="form-group">
@@ -43,7 +26,7 @@
       </div>
     <% end %>
     <div class="col-md-4 col-md-offset-4 colormatch">
-      [ <%= link_to "Cancel request and return to recipes listing", recipes_path %> ]
+      [ <%= link_to "Cancel request and return to articles listing", blogs_path %> ]
     </div>
   </div>
 </div>
