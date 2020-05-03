@@ -50,7 +50,7 @@ class BlogsController < ApplicationController
   def like
     like = Like.create(like: params[:like], user: current_user, blog: @blog)
     if like.valid?
-      flash[:success] = "Your selection was succesful"
+      flash[:success] = "Your selection was successful"
       redirect_back fallback_location: @blog
     else
       flash[:danger] = "You can only like/dislike a blog once"

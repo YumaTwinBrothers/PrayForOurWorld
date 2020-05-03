@@ -42,10 +42,10 @@
       <%= form_for([@blog, @comment], remote: true, :html => {class: "form-horizontal", role: "form"}) do |f| %>
         <div class="form-group">
           <div class="control-label col-md-2">
-            <%= f.label :description, "Comment" %>
+            <%= f.label :body, "Comment" %>
           </div>
           <div class="col-md-8">
-            <%= f.text_area :description, rows: 8, class: "form-control", placeholder: "Enter Comment Here" %>
+            <%= f.text_area :body, rows: 8, class: "form-control", placeholder: "Enter Comment Here" %>
           </div>
         </div>
         <div class="form-group">

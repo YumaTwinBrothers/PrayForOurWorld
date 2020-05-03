@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12 well">
       <h4><%= link_to blog.title, blog_path(blog) %></h4>
-      <p><%= truncate(blog.description, length: 150) %></p>
+      <p><%= truncate(blog.body, length: 150) %></p>
       <p>
         <span class="quiet"><small>Created <%= time_ago_in_words(blog.created_at) %> ago by <%= blog.user.username.capitalize %>
                                                           | <%= pluralize(blog.comments.count, 'Comment') %></small></span>
