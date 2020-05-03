@@ -1,18 +1,13 @@
-<%= render 'shared/page_title', title: "Chef #{@chef.chefname}'s profile" %>
-<div class="row">
-  <div class="col-md-4 col-md-offset-4 center">
-    <%= gravatar_for @chef, size: 150 %>
-  </div>
-</div>
-<% if @chef.recipes.count != 0 %>
-  <h4 align="center"><%= @chef.chefname %>'s recipes</h4>
+<%= render 'shared/page_title', title: "User #{@user.username}'s profile" %>
+<% if @user.blogs.count != 0 %>
+  <h4 align="center"><%= @user.username %>'s articles</h4>
   <div align="center">
-    <%= will_paginate @chef_recipes %>
+    <%= will_paginate @user_blogs %>
   </div>
-  <%= render 'recipes/recipe', obj: @chef_recipes %>
+  <%= render 'blogs/blog', obj: @user_blogs %>
   <div align="center">
-    <%= will_paginate @chef_recipes %>
+    <%= will_paginate @user_blogs %>
   </div>
 <% else %>
-  <h4 align="center">No recipes yet!</h4>
+  <h4 align="center">No articles yet!</h4>
 <% end %>
