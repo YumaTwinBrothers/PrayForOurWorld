@@ -1,4 +1,4 @@
-<%= render 'shared/page_title', title: "ChefChat" %>
+<%= render 'shared/page_title', title: "PrayForOurWorld" %>
 
 <div class="row chat-container">
   <div class="col-md-8 center-block">
@@ -8,7 +8,7 @@
     <hr />
     <div class="message-container">
       <%= form_for(@message, remote: true, :html => {class: "form-horizontal", role: "form"}) do |f| %>
-        <%= f.text_area :content, class: "form-control", data: { behavior: "room_speaker" }, placeholder: "Say something!" %>
+        <%= f.text_area :content, class: "form-control", data: { behavior: "room_speaker" }, placeholder: "Pray for what you want to!" %>
         <%= f.submit "Send", class: 'btn btn-primary', data: { send: "message" } %>
       <% end %>
     </div>
