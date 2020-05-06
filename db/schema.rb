@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_05_02_075109) do
     t.bigint "blog_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["blog_id"], name: "fk_rails_b9ae98a823"
     t.index ["user_id"], name: "fk_rails_03de2dc08c"
   end
 
@@ -60,6 +61,7 @@ ActiveRecord::Schema.define(version: 2020_05_02_075109) do
   end
 
   add_foreign_key "blogs", "users"
+  add_foreign_key "comments", "blogs"
   add_foreign_key "comments", "users"
   add_foreign_key "likes", "blogs"
   add_foreign_key "likes", "comments"
