@@ -6,6 +6,6 @@ Rest of tasks
 
 * Check environments again in case
 
-* Get started with deploy
+* Get started with deploy after solve conflict
 
 * Pick necessarily function up
