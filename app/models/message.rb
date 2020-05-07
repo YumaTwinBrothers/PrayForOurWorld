@@ -4,6 +4,6 @@ class Message < ApplicationRecord
   validates :user_id, presence: true
 
   def self.most_recent
-    order(:created_at).last(20)
+    order(created_at: :desc)
   end
 end
