@@ -8,7 +8,6 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-gem 'activerecord-mysql2-adapter'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -68,6 +67,8 @@ group :production do
   # Use Redis adapter to run Action Cable in production
   gem 'redis', '~> 4.0'
   gem 'rails_12factor'
+  # don't install following gem since rails5 doesn't need it anymore
+  # gem 'activerecord-mysql2-adapter'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
