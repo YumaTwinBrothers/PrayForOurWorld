@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV["REDIS_URL"] %>
-  channel_prefix: pray_for_our_world_production
+  channel_prefix: pray-for-our-world_production

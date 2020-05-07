@@ -28,7 +28,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-
+  config.assets.initialize_on_precompile=false
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
@@ -91,6 +91,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.web_socket_server_url = "wss://pray_for_our_world.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://pray_for_our_world.herokuapp.com', 'http://pray_for_our_world.herokuapp.com']
+  config.web_socket_server_url = "wss://pray-for-our-world.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://pray-for-our-world.herokuapp.com', 'http://pray-for-our-world.herokuapp.com']
 end
