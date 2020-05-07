@@ -156,12 +156,18 @@ footer ul li {
   padding-top: 10px;
 }
 
-.messages {
-  border: 1px solid #eaeaea;
-  height: 16em;
-  position: relative;
-  overflow: auto;
+.chatbox {
+  height: auto;
 }
+
+#messages {
+  height: 0;
+  line-height: 55px;
+  letter-spacing: 0.25em;
+  word-break: break-all;
+  padding: 0;
+}
+
 
 .liking {
   padding-right: 10px;
