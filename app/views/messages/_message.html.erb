@@ -1,11 +1,13 @@
-<div class="message">
+<div class="message" style="background: white; padding: 10px; margin-bottom: 10px">
   <p>
-    <strong><%= message.user.username.capitalize %></strong>
-    <span class="content">
+    <strong style="color: #444444"; font-weight: bold><%= message.user.username.capitalize %></strong>
+    <br>
+    <br>
+    <span class="content" style="color: #444444; font-weight: 600">
       <%= message.content %>
     </span>
   </p>
   <p>
-    <small><em>Created <%= time_ago_in_words(message.created_at) %> ago</em></small>
+    <small style="color: #888888"><em><%= time_ago_in_words(message.created_at) %> ago</em></small>
   </p>
 </div>

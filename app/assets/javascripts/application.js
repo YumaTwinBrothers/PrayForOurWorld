@@ -37,3 +37,14 @@ $(document).on('turbolinks:load', function() {
     $('#message_content').val('');
   })
 });
+
+function link_to(link) {
+  location.href = link;
+}
+
+$(function(){
+  $('#pray').keyup(function(){
+    var count = $(this).val().length;
+    $('#count').text(count);
+  });
+});
