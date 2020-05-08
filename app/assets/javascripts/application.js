@@ -43,7 +43,7 @@ function link_to(link) {
 }
 
 $(function(){
-  $('#pray').keyup(function(){
+  $('.form-control').keyup(function(){
     var count = $(this).val().length;
     $('#count').text(count);
   });
