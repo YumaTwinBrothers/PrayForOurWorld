@@ -104,11 +104,6 @@ body {
   text-align: center;
 }
 
-h2 img {
-  height: 50px;
-  width: auto;
-}
-
 // home
 .home-content {
   margin: 0 auto;
@@ -120,27 +115,28 @@ h1 {
 }
 
 h2 {
-  font-family: system-ui;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .inori-icon  img {
   height: auto;
-  width: 150px;
-  padding-bottom: 2%;
-  margin: 0 auto;
+  width: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .app-title {
   width: 100%;
-  font-size: 45px;
+  font-size: 32px;
   color: white;
-  font-weight: 500;
-  padding: 0 0 15% 0;
+  font-weight: 600;
+  padding: 0 0 10% 0;
   margin: 0 auto;
+  letter-spacing: 0.01em;
 }
 
 .home-icon img {
-  height: 150px;
+  height: 200px;
   width: auto;
   filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
   padding-bottom: 0%;
@@ -151,9 +147,9 @@ h2 {
 }
 
 .about {
-  padding-top: 0px;
-  font-size: 29px;
-  padding-bottom: 10%;
+  padding-top: 10px;
+  font-size: 25px;
+  padding-bottom: 8%;
   font-weight: 500;
   color: rgb(12, 0, 69);
 }
@@ -161,7 +157,7 @@ h2 {
 .total-number {
   font-size: 15px;
   color: white;
-  padding-top: 5%;
+  padding-top: 30px;
   font-weight: 500;
 }
 
