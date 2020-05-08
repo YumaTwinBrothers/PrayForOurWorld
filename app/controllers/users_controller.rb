@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       cookies.signed[:user_id] = @user.id
       flash[:success] = "Welcome #{@user.username} to PrayForOurWorld!"
-      redirect_to user_path(@user)
+      redirect_to chat_path
     else
       render 'new'
     end
