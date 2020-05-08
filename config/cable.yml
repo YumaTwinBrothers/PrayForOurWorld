@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV["REDIS_URL"] %>
+  url: redis://redis.pray-for-our-world.herokuapp.com:6379
