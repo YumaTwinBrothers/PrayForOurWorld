@@ -1,16 +1,16 @@
-<%= render 'shared/page_title', title: "PrayForOurWorld" %>
+<h2 class="chatroom-title">
+  <%= image_tag('inori.png') %>
+</h2>
 
 <div class="row chat-container">
   <div class="col-md-8 center-block">
     <div class="message-container">
       <%= form_for(@message, remote: true, :html => {class: "form-horizontal", role: "form"}) do |f| %>
-        <%= f.text_area :content, class: "form-control", data: { behavior: "room_speaker" }, placeholder: "Pray for what you want to!" %>
+        <%= f.text_area :content, class: "form-control", id: "pray", data: { behavior: "room_speaker" }, :maxlength => 340, placeholder: "Pray for what you want to! " %>
         <%= f.submit "Send", class: 'btn btn-primary', data: { send: "message" } %>
       <% end %>
+      <p class="count"><span id="count">0</span>/340</p>
     </div>
-    <br />
-    <br />
-    <br />
     <br />
     <div class="messages" id="messages">
       <%= render @messages %>

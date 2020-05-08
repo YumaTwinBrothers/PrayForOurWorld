@@ -3,48 +3,12 @@ $navbar-default-bg: #073B15;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html{
+  overflow-y:scroll;
+}
+
 .center {
   text-align: center;
-}
-
-.jumbotron {
-  background-image: asset-url('cafelatte.png');
-  background-size: cover;
-  height: 450px;
-}
-
-#logo {
-  float: left;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.jumbotron h1 {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
-
-.jumbotron h2 {
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  font-weight: bold;
-}
-
-.btn-xlarge {
-  background-color: #073B15;
 }
 
 .btn-xlarge:hover {
@@ -54,46 +18,11 @@ $navbar-default-bg: #073B15;
 
 body {
   height: 100%;
-}
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
+  background: linear-gradient(41deg, purple 25%, orange 50%, white) fixed;
 }
 
 .description {
   margin-top: 0;
-}
-
-.well a {
-  color: #073B15;
 }
 
 .user_info {
@@ -102,13 +31,6 @@ footer ul li {
 
 .colormatch a {
   color: #073B15;
-}
-
-.blog-actions {
-  padding-top: 5px;
-  a {
-    color: #fff;
-  }
 }
 
 .listing {
@@ -153,7 +75,8 @@ footer ul li {
 
 .message {
   padding-left: 5px;
-  padding-top: 10px;
+  padding-top: -10px;
+  line-height: normal;
 }
 
 .chatbox {
@@ -162,12 +85,10 @@ footer ul li {
 
 #messages {
   height: 0;
-  line-height: 55px;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   word-break: break-all;
   padding: 0;
 }
-
 
 .liking {
   padding-right: 10px;
@@ -176,4 +97,104 @@ footer ul li {
 .small-image {
   max-width: 25px;
   height: auto;
+}
+
+.chatroom-title {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+h2 img {
+  height: 50px;
+  width: auto;
+}
+
+// home
+.home-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Gill Sans", sans-serif;
+}
+
+h2 {
+  font-family: system-ui;
+}
+
+.inori-icon  img {
+  height: auto;
+  width: 150px;
+  padding-bottom: 2%;
+  margin: 0 auto;
+}
+
+.app-title {
+  width: 100%;
+  font-size: 45px;
+  color: white;
+  font-weight: 500;
+  padding: 0 0 15% 0;
+  margin: 0 auto;
+}
+
+.home-icon img {
+  height: 150px;
+  width: auto;
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+  padding-bottom: 0%;
+}
+
+.home-icon img:hover {
+  opacity: .8;
+}
+
+.about {
+  padding-top: 0px;
+  font-size: 29px;
+  padding-bottom: 10%;
+  font-weight: 500;
+  color: rgb(12, 0, 69);
+}
+
+.total-number {
+  font-size: 15px;
+  color: white;
+  padding-top: 5%;
+  font-weight: 500;
+}
+
+button.link-post {
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 1em;
+  background-color: white;
+}
+
+button.link-post:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+button p {
+  margin: 0 auto;
+  padding: 10px;
+  letter-spacing: .1em;
+  font-weight: 900;
+}
+
+.link-post:hover {
+  opacity: .8;
+}
+
+a {
+  text-decoration: none;
+  color: #888888;
+  font-weight: lighter;
+}
+
+a:hover {
+  color: #888888;
 }
