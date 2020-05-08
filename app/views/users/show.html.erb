@@ -1,4 +1,4 @@
-<%= render 'shared/page_title', title: "User #{@user.username}'s profile" %>
+<h2>User <% @user.username %> 's profile</h2>
 <% if @user.blogs.count != 0 %>
   <h4 align="center"><%= @user.username %>'s articles</h4>
   <div align="center">
