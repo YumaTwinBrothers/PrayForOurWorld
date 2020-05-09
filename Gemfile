@@ -65,8 +65,8 @@ end
 
 group :production do
   # Use Redis adapter to run Action Cable in production
-  # gem 'redis', '~> 4.0'
-  gem 'redis-rails'
+  gem 'redis', '~> 4.0'
+  # gem 'redis-rails'
   gem 'rails_12factor'
   # don't install following gem since rails5 doesn't need it anymore
   # gem 'activerecord-mysql2-adapter'
