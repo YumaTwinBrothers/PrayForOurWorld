@@ -1,13 +1,17 @@
-<nav class="navbar navbar-default" style="background:none; border: none; margin-bottom: -10px">
+<nav class="navbar navbar-default"
+ style="height:60px;border: none; background: linear-gradient(41deg, purple 25%, orange 50%, white) fixed; position: fixed; width:100%; z-index: 9999;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top:15px">
         <span class="sr-only">navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <div class="inori-icon">
+        <%= link_to image_tag('inori.png') %>
+      </div>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -15,7 +19,7 @@
         <% if logged_in? %>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" style="text-decoration: none; color: #888888; background:none" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username.capitalize %>'s Profile <%= "Admin" if current_user.admin? %><span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="background:white">
               <li><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
               <li role="separator" class="divider"></li>
               <li><%= link_to "Log out", logout_path, method: :delete %></li>
