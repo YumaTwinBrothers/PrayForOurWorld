@@ -1,5 +1,8 @@
 <div class="row chat-container" style="padding-top: 10%">
   <div class="col-md-8 center-block">
+    <div align="center">
+      <%= will_paginate @messages %>
+    </div>
     <div class="message-container">
       <%= form_for(@message, remote: true, :html => {class: "form-horizontal", role: "form"}) do |f| %>
         <%= f.text_area :content, class: "form-control", data: { behavior: "room_speaker" }, :maxlength => 340, placeholder: "Pray for what you want to! " %>
