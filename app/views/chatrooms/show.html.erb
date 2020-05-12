@@ -1,6 +1,6 @@
-<div class="row chat-container" style="padding-top: 10%">
-  <div class="col-md-8 center-block">
-    <div align="center">
+<div class="row chat-container" style="padding-top: 10%; height:100%">
+  <div class="col-md-8 center-block" style="height: 100%">
+    <div align="center" style="opacity:.8; position: fixed; bottom: 0; width: 100%; height: 80px; padding-left: 10%">
       <%= will_paginate @messages %>
     </div>
     <div class="message-container">
@@ -10,7 +10,6 @@
       <% end %>
       <p class="count"><span id="count">0</span>/340</p>
     </div>
-    <br />
     <div class="messages" id="messages">
       <%= render @messages %>
     </div>
