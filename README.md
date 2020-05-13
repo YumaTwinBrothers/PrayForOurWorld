@@ -4,6 +4,6 @@ Rest of tasks
 
 * Set .gitignore
 
-* Pick necessarily function up
+* Pick function needed up
 
 * solve conflict on production environments
