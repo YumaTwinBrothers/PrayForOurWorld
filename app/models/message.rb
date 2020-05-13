@@ -3,7 +3,5 @@ class Message < ApplicationRecord
   validates :content, presence: true
   validates :user_id, presence: true
 
-  def self.most_recent
-    order(created_at: :desc)
-  end
+  
 end

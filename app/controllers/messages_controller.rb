@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   before_action :require_user
 
   def create
+    @messages = Message.all
     @message = Message.new(message_params)
     @message.user = current_user
     if @message.save
