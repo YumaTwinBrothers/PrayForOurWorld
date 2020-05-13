@@ -15,7 +15,6 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
-//= require infinite-scroll/dist/infinite-scroll.pkgd.min
 
 
 function submitMessage(event){

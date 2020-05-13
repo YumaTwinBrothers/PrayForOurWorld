@@ -10,7 +10,11 @@
         <span class="icon-bar"></span>
       </button>
       <div class="inori-icon">
-        <%= link_to image_tag('inori.png') %>
+        <% if logged_in? %>
+          <%= link_to image_tag('inori.png'), chat_path %>
+        <% else %>
+          <%= link_to image_tag('inori.png'), root_path %>
+        <% end %>
       </div>
     </div>
 
