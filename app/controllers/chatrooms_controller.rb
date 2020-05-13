@@ -3,7 +3,7 @@ class ChatroomsController < ApplicationController
   def show
     @message = Message.new
     messages = Message.all.order(created_at: :desc)
-    @messages = messages.paginate(page: params[:page], per_page: 50)
+    @messages = messages.paginate(page: params[:page], per_page: 100)
   end
 
 end
