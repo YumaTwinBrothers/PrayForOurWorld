@@ -8,7 +8,7 @@ html{
 }
 
 body {
-  background: linear-gradient(41deg, purple 25%, orange 50%, white) fixed;
+  background: linear-gradient(41deg, purple 25%, orange 50%, rgba(255, 107, 0, 0.48)) fixed;
 }
 
 .container {
@@ -164,9 +164,9 @@ h2 {
 }
 
 .total-number {
-  font-size: 15px;
+  font-size: 20px;
   color: white;
-  padding-top: 30px;
+  padding-top: 20px;
   font-weight: 500;
 }
 
