@@ -1,7 +1,7 @@
 <div class="row chat-container" style="padding-top: 10%; height:100%">
   <div class="col-md-8 center-block" style="height: 100%">
-    <div align="center" style="opacity:.8; position: fixed; bottom: 0; width: 100%; height: 80px; padding-left: 10%">
-      <%= will_paginate @messages %>
+    <div align="center" style="position: fixed; bottom: 0; width: 100%; height: 80px; padding-right: 6%">
+      <%= will_paginate @messages, previous_label: '<', next_label: '>', inner_window: 0 %>
     </div>
     <div class="message-container">
       <%= form_for(@message, remote: true, :html => {class: "form-horizontal", role: "form"}) do |f| %>
