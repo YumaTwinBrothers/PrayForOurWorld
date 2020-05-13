@@ -16,7 +16,6 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       cookies.signed[:user_id] = @user.id
-      flash[:success] = "Welcome #{@user.username} to PrayForOurWorld!"
       redirect_to chat_path
     else
       render 'new'
@@ -32,7 +31,6 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      flash[:success] = "Your account was updated successfully"
       redirect_to chat_path
     else
       render 'edit'
@@ -42,7 +40,6 @@ class UsersController < ApplicationController
   def destroy
     if !@user.admin?
       @user.destroy
-      flash[:danger] = "User and all associated blogs have been deleted!"
       redirect_to users_path
     end
   end
@@ -59,14 +56,12 @@ class UsersController < ApplicationController
 
   def require_same_user
     if current_user != @user and !current_user.admin?
-      flash[:danger] = "You can only edit or delete your own account"
       redirect_to users_path
     end
   end
 
   def require_admin
     if logged_in? && !current_user.admin?
-      flash[:danger] = "Only admin users can perform that action"
       redirect_to root_path
     end
   end

@@ -11,7 +11,6 @@ class SessionsController < ApplicationController
       cookies.signed[:user_id] = user.id
       redirect_to chat_path
     else
-      flash.now[:danger] = "There was something wrong with your login information"
       render 'new'
     end
   end
