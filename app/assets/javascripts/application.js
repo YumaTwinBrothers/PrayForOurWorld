@@ -42,7 +42,7 @@ $(document).on('turbolinks:load', function() {
 function link_to(link) {
   location.href = link;
 }
-
+// ---文字数カウント
 $(function(){
   $('.form-control').keyup(function(){
     var count = $(this).val().length;
