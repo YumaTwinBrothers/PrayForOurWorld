@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user_blogs = @user.blogs.paginate(page: params[:page], per_page: 5)
+    
   end
 
   def edit
