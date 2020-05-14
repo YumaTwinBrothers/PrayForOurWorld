@@ -1,13 +1,3 @@
 <h2>User <% @user.username %> 's profile</h2>
-<% if @user.blogs.count != 0 %>
   <h4 align="center"><%= @user.username %>'s articles</h4>
-  <div align="center">
-    <%= will_paginate @user_blogs %>
-  </div>
-  <%= render 'blogs/blog', obj: @user_blogs %>
-  <div align="center">
-    <%= will_paginate @user_blogs %>
-  </div>
-<% else %>
   <h4 align="center">No articles yet!</h4>
-<% end %>
