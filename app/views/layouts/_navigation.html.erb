@@ -22,7 +22,7 @@
       <ul class="nav navbar-nav navbar-right" style="font-weight: bold">
         <% if logged_in? %>
           <li class="dropdown">
-            <div class="dropdown-toggle" style="text-decoration: none; color: #888888; background:none; padding:10px 10px 0 0" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username.capitalize %>'s Profile <%= "Admin" if current_user.admin? %><span class="caret"></span></div>
+            <div class="dropdown-toggle" style="font-weight: lighter; color: #888888; background: white; padding:10px 10px 10px 20px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username.capitalize %>'s Profile <%= "Admin" if current_user.admin? %><span class="caret"></span></div>
             <ul class="dropdown-menu" style="background:white">
               <li><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
               <% if current_user.admin?  %>
@@ -33,7 +33,7 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+          <li style="background:white"><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
